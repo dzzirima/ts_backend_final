@@ -4,7 +4,7 @@
   "description": "This is a repo to learn ts",
   "main": "index.js",
   "scripts": {
-    "dev":"ts-node-dev --respawn --transpile-only src/app.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "David T Zirima",
@@ -21,6 +21,8 @@
     "nanoid": "^4.0.0",
     "pino": "^8.6.1",
     "pino-pretty": "^9.1.1",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.5.0",
     "zod": "^3.19.1"
   },
   "devDependencies": {
@@ -34,6 +36,8 @@
     "@types/nanoid": "^3.0.0",
     "@types/node": "^18.8.5",
     "@types/pino": "^7.0.5",
+    "@types/swagger-jsdoc": "^6.0.1",
+    "@types/swagger-ui-express": "^4.1.3",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.8.4"
   }
