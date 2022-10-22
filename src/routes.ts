@@ -45,12 +45,43 @@ function routes(app: Express) {
    *         description: Conflict
    *       400:
    *         description: Bad request
-  
-   *  
-  
    */
 
-  app.post("/user", (req: Request, res: Response) => res.sendStatus(200));
+  app.post("/user", (req: Request, res: Response) => res.sendStatus(409));
+
+  /**
+   * @openapi
+   * 'getuserByid/{userId}':
+   *  get:
+   *    tags:
+   *      - User
+   *    summary: Get user by id
+   *    parameters:
+   *      - name: productId
+   *        in: path
+   *        description: The id of the product
+   *        required: true
+   *    responses:
+   *       200:
+   *         description: Success
+   *         content:
+   *           application/json:
+   *             schema: 
+   *               $ref: '#/components/schemas/CreateUserResponce'
+   *       409:
+   *         description: Conflict
+   *       400:
+   *         description: Bad request
+   *    
+   
+   *   
+   * 
+   *      
+   */
+
+  app.post("/user", (req: Request, res: Response) => res.sendStatus(409));
+
+
 }
 
 export default routes;
