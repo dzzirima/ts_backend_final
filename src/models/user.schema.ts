@@ -18,4 +18,18 @@
  *         password:
  *           type: string
  *           default: password
+ *     CreateUserResponce:
+ *       type: object
+ *       properties:
+ *         email:
+ *           type: string
+ *         name:
+ *           type: string
+ *         _id:
+ *           type: string
+ *         createdAt:
+ *           type: string
+ *         updatedAt:
+ *           type: string
+
  */

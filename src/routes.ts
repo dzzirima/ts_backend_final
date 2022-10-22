@@ -23,7 +23,7 @@ function routes(app: Express) {
 
   /**
    * @openapi
-   * '/user/create':
+   * '/user':
    *   post:
    *     tags:
    *       - User
@@ -40,7 +40,12 @@ function routes(app: Express) {
    *         content:
    *           application/json:
    *             schema: 
-   *               $ref: '#/components/schemas/CreateUserInput'
+   *               $ref: '#/components/schemas/CreateUserResponce'
+   *       409:
+   *         description: Conflict
+   *       400:
+   *         description: Bad request
+  
    *  
   
    */
