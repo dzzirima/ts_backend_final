@@ -15,10 +15,9 @@ const options :swaggerJsDoc.Options = {
         },
     },
     //an array of paths where your APIs are defined
-    apis:["../routes.ts", "../models/*.ts"]
+    apis:["./src/routes.ts", "./src/models/*.ts"]
     
 }
-
 
 const swaggerSpecification = swaggerJsDoc(options)
 
